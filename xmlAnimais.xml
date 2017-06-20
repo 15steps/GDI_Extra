@@ -1,110 +1,198 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="style.css"?>
-<catalog xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<catalog xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
 <!--Início do XML Schema-->
-<xs:complexType>
-  <xs:sequence>
-    <xs:element name="CLIENTE_NOME" type="xs:string"/>
-    <xs:element name="TIPO" type="xs:string"/>
-    <xs:element name="IDADE" type="xs:integer"/>
-  </xs:sequence>
-</xs:complexType>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<LISTA_MATRICULA>
+<xs:element name="ANIMAIS">
+  <xs:element name="ANIMAL">
+   <xs:complexType>
+     <xs:sequence>
+       <xs:element name="CLIENTE_NOME" type="xs:string"/>
+       <xs:element name="TIPO" type="xs:string"/>
+       <xs:element name="IDADE" type="xs:integer"/>
+     </xs:sequence>
+   </xs:complexType>
+  </xs:element>
+</xs:element>
 
-<inicio>
-  Lista de Matriculas
-</inicio>
+</xs:schema>
 
-<headers>
-  <header>Numero</header>
-  <header>Descricao do Terreno</header>
-  <header>Numero Averbacoes</header>
-</headers>
+<!--Fim do XML Schema-->
+<ANIMAIS>
+  <inicio>
+    Lista de Animais
+  </inicio>
 
- <MATRICULA>
-  <NUMERO>7465032</NUMERO>
-
-<DESC_TERRENO>0702</DESC_TERRENO>
-  <NUM_AVERBACAO>73549</NUM_AVERBACAO>
-
-</MATRICULA>
- <MATRICULA>
-  <NUMERO>7465032</NUMERO>
-
-<DESC_TERRENO>0702</DESC_TERRENO>
-  <NUM_AVERBACAO>39021</NUM_AVERBACAO>
-
-</MATRICULA>
- <MATRICULA>
-  <NUMERO>2138771</NUMERO>
-
-<DESC_TERRENO>0768</DESC_TERRENO>
-  <NUM_AVERBACAO>29877</NUM_AVERBACAO>
-
-</MATRICULA>
- <MATRICULA>
-  <NUMERO>2138771</NUMERO>
-
-<DESC_TERRENO>0768</DESC_TERRENO>
-  <NUM_AVERBACAO>85451</NUM_AVERBACAO>
-
-</MATRICULA>
- <MATRICULA>
-  <NUMERO>3747461</NUMERO>
-
-<DESC_TERRENO>0219</DESC_TERRENO>
-  <NUM_AVERBACAO>56043</NUM_AVERBACAO>
-
-</MATRICULA>
- <MATRICULA>
-  <NUMERO>3747461</NUMERO>
-
-<DESC_TERRENO>0219</DESC_TERRENO>
-  <NUM_AVERBACAO>86410</NUM_AVERBACAO>
-
-</MATRICULA>
- <MATRICULA>
-  <NUMERO>2911902</NUMERO>
-
-<DESC_TERRENO>0336</DESC_TERRENO>
-  <NUM_AVERBACAO>5434</NUM_AVERBACAO>
-
-</MATRICULA>
- <MATRICULA>
-  <NUMERO>2911902</NUMERO>
-
-<DESC_TERRENO>0336</DESC_TERRENO>
-  <NUM_AVERBACAO>33402</NUM_AVERBACAO>
-
-</MATRICULA>
- <MATRICULA>
-  <NUMERO>7069903</NUMERO>
-
-<DESC_TERRENO>0958</DESC_TERRENO>
-  <NUM_AVERBACAO>67887</NUM_AVERBACAO>
-
-</MATRICULA>
- <MATRICULA>
-  <NUMERO>7069903</NUMERO>
-
-<DESC_TERRENO>0958</DESC_TERRENO>
-  <NUM_AVERBACAO>95047</NUM_AVERBACAO>
-
-</MATRICULA>
- <MATRICULA>
-  <NUMERO>7264922</NUMERO>
-
-<DESC_TERRENO>0660</DESC_TERRENO>
-  <NUM_AVERBACAO>20286</NUM_AVERBACAO>
-
-</MATRICULA>
- <MATRICULA>
-  <NUMERO>7991295</NUMERO>
-
-<DESC_TERRENO>0126</DESC_TERRENO>
-  <NUM_AVERBACAO>20404</NUM_AVERBACAO>
-
-</MATRICULA>
-</LISTA_MATRICULA>
+  <headers>
+    <header>Nome do cliente</header>
+    <header>Tipo do animal</header>
+    <header>Peso do animal</header>
+  </headers>
+<ANIMAL>
+ <CLIENTE_NOME>Lorenzo Daniela</CLIENTE_NOME>
+ <TIPO>cachorro</TIPO>
+ <IDADE>3</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Lorenzo Daniela</CLIENTE_NOME>
+ <TIPO>cachorro</TIPO>
+ <IDADE>7</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Lorenzo Daniela</CLIENTE_NOME>
+ <TIPO>cachorro</TIPO>
+ <IDADE>5</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Emanuelly Maria</CLIENTE_NOME>
+ <TIPO>gato</TIPO>
+ <IDADE>2</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Rebeca Isadora</CLIENTE_NOME>
+ <TIPO>gato</TIPO>
+ <IDADE>3</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Miguel Giovanni</CLIENTE_NOME>
+ <TIPO>coelho</TIPO>
+ <IDADE>4</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Miguel Giovanni</CLIENTE_NOME>
+ <TIPO>gato</TIPO>
+ <IDADE>1</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Tomás Gustavo</CLIENTE_NOME>
+ <TIPO>cachorro</TIPO>
+ <IDADE>5</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Rafaela Eduarda</CLIENTE_NOME>
+ <TIPO>peixe</TIPO>
+ <IDADE>4</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Rafaela Eduarda</CLIENTE_NOME>
+ <TIPO>cachorro</TIPO>
+ <IDADE>2</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Sarah Caroline</CLIENTE_NOME>
+ <TIPO>coelho</TIPO>
+ <IDADE>3</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Natália Melissa</CLIENTE_NOME>
+ <TIPO>gato</TIPO>
+ <IDADE>4</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Emanuelly Sabrina</CLIENTE_NOME>
+ <TIPO>cachorro</TIPO>
+ <IDADE>1</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Sara Alana </CLIENTE_NOME>
+ <TIPO>gato</TIPO>
+ <IDADE>3</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Sara Alana </CLIENTE_NOME>
+ <TIPO>gato</TIPO>
+ <IDADE>2</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Yasmin Pietra</CLIENTE_NOME>
+ <TIPO>peixe</TIPO>
+ <IDADE>1</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Ana Joana</CLIENTE_NOME>
+ <TIPO>coelho</TIPO>
+ <IDADE>6</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Amanda Emanuelly</CLIENTE_NOME>
+ <TIPO>papagaio</TIPO>
+ <IDADE>8</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Caroline Nina</CLIENTE_NOME>
+ <TIPO>peixe</TIPO>
+ <IDADE>3</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Caroline Nina</CLIENTE_NOME>
+ <TIPO>gato</TIPO>
+ <IDADE>2</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Ana Carolina</CLIENTE_NOME>
+ <TIPO>hamster</TIPO>
+ <IDADE>1</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Ana Carolina</CLIENTE_NOME>
+ <TIPO>hamster</TIPO>
+ <IDADE>2</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Thaíse Cavalcante</CLIENTE_NOME>
+ <TIPO>cachorro</TIPO>
+ <IDADE>1</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Thaíse Cavalcante</CLIENTE_NOME>
+ <TIPO>cachorro</TIPO>
+ <IDADE>1</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Helga Cavalcante</CLIENTE_NOME>
+ <TIPO>gato</TIPO>
+ <IDADE>3</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Helga Cavalcante</CLIENTE_NOME>
+ <TIPO>gato</TIPO>
+ <IDADE>2</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Yolanda Jonas</CLIENTE_NOME>
+ <TIPO>cachorro</TIPO>
+ <IDADE>4</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Yolanda Jonas</CLIENTE_NOME>
+ <TIPO>papagaio</TIPO>
+ <IDADE>6</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Yolanda Jonas</CLIENTE_NOME>
+ <TIPO>gato</TIPO>
+ <IDADE>1</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Bárbara Vasconcelos</CLIENTE_NOME>
+ <TIPO>peixe</TIPO>
+ <IDADE>2</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Bárbara Vasconcelos</CLIENTE_NOME>
+ <TIPO>peixe</TIPO>
+ <IDADE>3</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Paulo Lasalvia</CLIENTE_NOME>
+ <TIPO>coelho</TIPO>
+ <IDADE>5</IDADE>
+</ANIMAL>
+<ANIMAL>
+ <CLIENTE_NOME>Paulo Lasalvia</CLIENTE_NOME>
+ <TIPO>cachorro</TIPO>
+ <IDADE>4</IDADE>
+</ANIMAL>
+</ANIMAIS>

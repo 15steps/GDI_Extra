@@ -1,11 +1,11 @@
 @media screen {
-	
+
 	inicio{
 		display: block;
 		font: bold large sans-serif;
 	}
 
-	LISTA_MATRICULA {
+	LISTA_ANIMAIS {
 		display: table;
 		width: 85em;
 		border-collapse: collapse;
@@ -15,13 +15,13 @@
 		table-layout: fixed;
 	}
 
-	MATRICULA,headers:nth-child(odd) {
+	ANIMAL,headers:nth-child(odd) {
 		font-weight: bold;
 		background: #060;
 		color: #000;
 	}
 
-	MATRICULA, headers {
+	ANIMAL, headers {
 		display: table-row;
 		font: normal medium sans-serif;
 		padding: 0.5em;
@@ -30,7 +30,7 @@
 		text-align: left;
 	}
 
-	header, NUMERO, DESC_TERRENO, NUM_AVERBACAO{
+	header, CLIENTE_NOME, TIPO, IDADE{
 		display: table-cell;
 	}
 
