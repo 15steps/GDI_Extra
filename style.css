@@ -1,43 +1,58 @@
+@font-face {
+    font-family: 'Roboto'; /*a name to be used later*/
+    src: url('https://fonts.googleapis.com/css?family=Roboto'); /*URL to font*/
+}
+
 @media screen {
 
 	inicio{
 		display: block;
-		font: bold large sans-serif;
+		font-family: 'Roboto', sans-serif;
+		font-size: 50px;
+		margin: auto;
+		color: #fff;
 	}
 
-	LISTA_ANIMAIS {
+	ANIMAIS {
 		display: table;
-		width: 85em;
+		width: 70%;
 		border-collapse: collapse;
 		border-spacing: 0;
-		border: 2px;
-		margin: 0.1em;
+		border: 1px;
+		margin: auto;
 		table-layout: fixed;
+		background: #009688;
 	}
 
-	ANIMAL,headers:nth-child(odd) {
-		font-weight: bold;
-		background: #060;
+	ANIMAL:nth-child(odd) {
+		background: #EEEEEE;
+		color: #000;
+	}
+
+	ANIMAL:nth-child(even) {
+		background-color: #fff;
 		color: #000;
 	}
 
 	ANIMAL, headers {
 		display: table-row;
-		font: normal medium sans-serif;
-		padding: 0.5em;
-		border: 1px solid gray;
+		font-size: large;
+		font-family: 'Roboto', sans-serif;
+		border: none;
 		vertical-align: top;
-		text-align: left;
+		text-align: center;
 	}
 
 	header, CLIENTE_NOME, TIPO, IDADE{
 		display: table-cell;
+		padding: 15px 3px 15px 3px;
 	}
 
 	header {
 		font-weight: bold;
-		background: #000;
-		color: #fff;
+		font-size: 25px;
+		background: #FFC107;
+		color: #000;
 	}
 
 }
