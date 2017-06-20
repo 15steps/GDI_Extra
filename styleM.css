@@ -1,0 +1,43 @@
+@media screen {
+	
+	inicio{
+		display: block;
+		font: bold large sans-serif;
+	}
+
+	LISTA_MATRICULA {
+		display: table;
+		width: 85em;
+		border-collapse: collapse;
+		border-spacing: 0;
+		border: 2px;
+		margin: 0.1em;
+		table-layout: fixed;
+	}
+
+	MATRICULA,headers:nth-child(odd) {
+		font-weight: bold;
+		background: #060;
+		color: #000;
+	}
+
+	MATRICULA, headers {
+		display: table-row;
+		font: normal medium sans-serif;
+		padding: 0.5em;
+		border: 1px solid gray;
+		vertical-align: top;
+		text-align: left;
+	}
+
+	header, NUMERO, DESC_TERRENO, NUM_AVERBACAO{
+		display: table-cell;
+	}
+
+	header {
+		font-weight: bold;
+		background: #000;
+		color: #fff;
+	}
+
+}
