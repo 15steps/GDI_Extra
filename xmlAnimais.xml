@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="style.css"?>
-<catalog xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<!--Início do XML Schema-->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--Início do DTD-->
 
-<xs:element name="ANIMAIS">
-  <xs:element name="ANIMAL">
-   <xs:complexType>
-     <xs:sequence>
-       <xs:element name="CLIENTE_NOME" type="xs:string"/>
-       <xs:element name="TIPO" type="xs:string"/>
-       <xs:element name="IDADE" type="xs:integer"/>
-     </xs:sequence>
-   </xs:complexType>
-  </xs:element>
-</xs:element>
+<!DOCTYPE ANIMAIS [
+  <!ELEMENT ANIMAL (CLIENTE_NOME, TIPO, IDADE)>
+  <!ELEMENT CLIENTE_NOME (#PCDATA)>
+  <!ELEMENT TIPO (#PCDATA)>
+  <!ELEMENT IDADE (#PCDATA)>
+]>
 
-</xs:schema>
+<!--Fim do DTD-->
 
-<!--Fim do XML Schema-->
+<!--XML Gerado pela consulta no banco-->
 <ANIMAIS>
   <inicio>
     Lista de Animais
