@@ -15,8 +15,9 @@
 <!--XML Gerado pela consulta no banco-->
 <ANIMAIS>
   <inicio>
-    Animais
+    Lista de Animais
   </inicio>
+
   <headers>
     <header>Nome do cliente</header>
     <header>Tipo do animal</header>
