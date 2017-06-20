@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="style.css"?>
+<catalog xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
-<!DOCTYPE LISTA_MATRICULA [
-  <!ELEMENT MATRICULA (NUMERO, DESC_TERRENO, NUM_AVERBACAO)>
-  <!ELEMENT NUMERO (#PCDATA)>
-  <!ELEMENT DESC_TERRENO (#PCDATA)>
-  <!ELEMENT NUM_AVERBACAO (#PCDATA)>
-]>
-
-
+<!--Início do XML Schema-->
+<xs:complexType>
+  <xs:sequence>
+    <xs:element name="CLIENTE_NOME" type="xs:string"/>
+    <xs:element name="TIPO" type="xs:string"/>
+    <xs:element name="IDADE" type="xs:integer"/>
+  </xs:sequence>
+</xs:complexType>
 
 <LISTA_MATRICULA>
 
